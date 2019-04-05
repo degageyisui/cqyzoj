@@ -1,0 +1,649 @@
+<html>
+ <head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <title>
+   Vijos - P1506
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="No-cach" http-equiv="Pragma"/>
+  <meta content="Vijos,Velocious Informatics Judge Online System,高效信息学在线评测系统,湖南师大附中,Vivian Snow,Vivian Utopia,Viviworks,信息学,评测,OJ" name="Kyewords"/>
+  <meta content="Vijos,Velocious Informatics Judge Online System" name="Description"/>
+  <meta content="All" name="Robots"/>
+  <meta content="Vivian Snow,VivianSnow@Gmail.com" name="Author"/>
+  <meta content="Copyright Vijos (c) 2005. www.Vijos.cn Powered by Vivian Snow" name="Copyright"/>
+  <meta content="Dreamweaver,Visual Studio .net 2003" name="Generator "/>
+  <link href="Skin/Life Azure/Style.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+ </head>
+ <body>
+  <div align="center">
+   <table border="0" cellpadding="0" cellspacing="0" width="750">
+    <tr>
+     <td align="center" colspan="2">
+      <a href="Index.html">
+       <img border="0" height="70" src="Skin/Life Azure/Haed.gif" usemap="#MapHead" width="750"/>
+      </a>
+      <map id="MapHead" name="MapHead">
+       <area alt="点击这里更换您喜欢的皮肤" coords="71,1,153,21" href="Skin.asp" shape="rect">
+       </area>
+       <area alt="Vijos 首页" coords="0,0,750,70" href="Index.asp" shape="rect">
+       </area>
+      </map>
+     </td>
+    </tr>
+    <tr>
+     <td align="right" bgcolor="#174B73" height="25">
+      <font class="styletext">
+      </font>
+      <a href="Index.html">
+       <font class="style3">
+        首页
+       </font>
+      </a>
+      <font class="style3">
+       |
+      </font>
+      <a href="peixun.html">
+       <font class="style3">
+        [NOIP培训]
+       </font>
+      </a>
+      <a href="kaoshi2020.html">
+       <font class="style3">
+        考试
+       </font>
+      </a>
+      <a href="Problem.html">
+       <font class="style3">
+        题库
+       </font>
+      </a>
+      <a href="Record.html">
+       <font class="style3">
+        记录
+       </font>
+      </a>
+      <a href="Rank.html">
+       <font class="style3">
+        排名
+       </font>
+      </a>
+      <a href="Group.html">
+       <font class="style3">
+        团队
+       </font>
+      </a>
+      <a href="Discuss.html">
+       <font class="style3">
+        讨论
+       </font>
+      </a>
+      <font class="style3">
+       |
+      </font>
+      <a href="USpace.html">
+       <font class="style3">
+        空间
+       </font>
+      </a>
+      <a href="Logout.html">
+       <font class="style3">
+        登出
+       </font>
+      </a>
+     </td>
+     <td align="center" bgcolor="#174B73">
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#1B5987" colspan="2" height="5">
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#1B5987" colspan="2">
+      <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+       <tr>
+        <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+        </td>
+        <td background="Skin/Life Azure/Frame_r1_c2.gif">
+        </td>
+        <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+        </td>
+       </tr>
+       <tr>
+        <td background="Skin/Life Azure/Frame_r2_c1.gif">
+        </td>
+        <td align="left" valign="middle" width="712">
+         <marquee align="right" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
+          <font color="#003366">
+           <b>
+            公告 News &gt;&gt;
+           </b>
+          </font>
+          <a href="News#23.html">
+           <font color="#006699">
+            <b>
+             欢迎新同学
+            </b>
+            (2017/7/14 10:18:56)
+           </font>
+          </a>
+         </marquee>
+        </td>
+        <td background="Skin/Life Azure/Frame_r2_c3.gif">
+        </td>
+       </tr>
+       <tr>
+        <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+        </td>
+        <td background="Skin/Life Azure/Frame_r3_c2.gif">
+        </td>
+        <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <table border="0" cellpadding="0" cellspacing="0" width="750">
+     <tr>
+      <td align="center" bgcolor="#1B5987" colspan="2">
+       <script>
+        document.title=document.title+" - 【训练题】作弊的发牌者"
+       </script>
+       <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+        <tr>
+         <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td align="left" valign="top" width="712">
+          <table align="right" border="0" cellpadding="0" cellspacing="0" width="320">
+           <tr align="center">
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Upload_1506.html">
+               【提交】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_record_1506.html">
+               【记录】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_status_1506.html">
+               【状态】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Discuss_1506.html">
+               【讨论】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Solve_1506.html">
+               【题解】
+              </a>
+             </span>
+            </td>
+           </tr>
+          </table>
+          <a href="Problem_Show_1506.html">
+           <font class="style1">
+            【训练题】作弊的发牌者
+           </font>
+          </a>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td>
+          <hr/>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             时间限制：1秒  内存限制：64M
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+       </table>
+       <table border="0" cellpadding="0" cellspacing="0" width="740">
+        <tr>
+         <td valign="top" width="740">
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+            </td>
+            <td background="Skin/Life Azure/Frame_r1_c2.gif" colspan="2">
+            </td>
+            <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="25" valign="middle" width="712">
+             【问题描述】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             贝茜正在与她的N-1个朋友打牌。她们玩的牌一副为 K （K为N的倍数）张。所有牌中，一共有M （M=K/N ）张“好牌”，其余的 K-M 张为“差牌”。贝茜是游戏的发牌者，很自然地，她想把所有好牌都留给自己。她热衷于获胜，即使为此必须采取一些不正当的手段。
+             <br/>
+             <br/>
+             在若干局游戏后，贝茜的朋友们开始怀疑贝茜在游戏中作弊，于是她们想了个对策，使用新的发牌规则。规则具体如下：
+             <br/>
+             <br/>
+             1）、贝茜把牌堆的最上面一张发给她右边的奶牛；
+             <br/>
+             2）、每当贝茜发完一张牌，她都得将牌堆顶部接下来的 P 张牌放到底部去（一般把这个操作称为切牌）；
+             <br/>
+             3）、然后，贝茜对逆时针方向的下一头奶牛重复上述的操作。
+             <br/>
+             <br/>
+             贝茜绝望地认为，她再也不可能获胜了，于是她找到了你，希望你告诉她，将好牌放在初始牌堆的哪些位置，能够确保它们在发完牌后全集中到她手里。顺带说明一下，我们把牌堆顶的牌定义为 1 号牌，从上往下第二张定义为 2 号牌，依此类推。
+             <br/>
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="25" valign="middle" width="712">
+             【输入格式】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+             &amp;nbsp
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             第 1 行：3 个用空格隔开的整数：N、K 以及 P
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="10" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输出格式】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             一行，包含M个整数，表示贝茜应该在初始牌堆的这个位置放一张好牌。所有的位置按升序输出。
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输入样例】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             3 9 2
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输出样例】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             3 7 8
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【数据范围】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             1 &lt;= N &lt;= 100
+             <br/>
+             N &lt;= K &lt;= 100,000
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【来源】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             <br/>
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+            </td>
+            <td background="Skin/Life Azure/Frame_r3_c2.gif" colspan="2">
+            </td>
+            <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+       <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+        <tr>
+         <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td align="left" valign="top" width="712">
+          <table align="right" border="0" cellpadding="0" cellspacing="0" width="320">
+           <tr align="right">
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Upload_1506.html">
+               【提交】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_record_1506.html">
+               【记录】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_status_1506.html">
+               【状态】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Discuss_1506.html">
+               【讨论】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Solve_1506.html">
+               【题解】
+              </a>
+             </span>
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#1B5987" colspan="2" height="5">
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#003366" colspan="2" height="5">
+      </td>
+     </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="750">
+     <tr>
+      <td align="center" colspan="2" height="50">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+         <td align="left" valign="top">
+          Copyright Vijos © 2005-2006.www.Vijos.cn Powered by
+          <a href="http://www.VivianSnow.cn.html" target="_blank">
+           Vivian Snow
+          </a>
+          <a href="About.html">
+           <strong>
+            关于
+           </strong>
+          </a>
+          <a href="Contact.html">
+           <strong>
+            联系
+           </strong>
+          </a>
+          <a href="Help.html">
+           <strong>
+            帮助
+           </strong>
+          </a>
+          <br/>
+          <span style="font-size: 9px">
+           Vijos Information ----
+           <a href="Rank.html">
+            Total Users : 1495
+           </a>
+           |
+           <a href="Online.html">
+            Online Users / Processes : 2 / 7
+           </a>
+           | Processed Time : 23 ms | Server Time : 2018/1/23 21:39:02
+          </span>
+         </td>
+         <td valign="top" width="60">
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+    <style>
+     #UserShowInfo {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:68px;
+	z-index:100;
+	cursor: hand;
+	filter: Alpha(Opacity=10, FinishOpacity=20, Style=1, StartX=0, StartY=0, FinishX=0, FinishY=70);
+}
+    </style>
+    <div id="UserShowInfo">
+     <div align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="440">
+       <tr>
+        <td height="2">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <table align="left" bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="1" width="0">
+          <tr>
+           <td>
+            <table align="left" bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="0" width="100%">
+             <tr>
+              <td rowspan="2" width="48">
+               <img height="48" src="Face/Face9.gif" width="48"/>
+              </td>
+              <td>
+               <div align="center">
+                <a href="User_Show_2063.html" title="U2063 - 通过255题 - Member - 高2020级A班 - P2962">
+                 <font color="#CC9966">
+                  <strong>
+                   莫洛托夫鸡尾酒
+                  </strong>
+                 </font>
+                </a>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td bordercolor="" dir="">
+               <div align="center">
+                <img height="12" src="Face/stars4.gif" width="64"/>
+                <img height="12" src="Img/Sex_1.gif" width="10"/>
+               </div>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+   </table>
+  </div>
+ </body>
+</html>

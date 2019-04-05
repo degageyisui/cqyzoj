@@ -1,0 +1,741 @@
+<html>
+ <head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <title>
+   Vijos - P3438
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="No-cach" http-equiv="Pragma"/>
+  <meta content="Vijos,Velocious Informatics Judge Online System,高效信息学在线评测系统,湖南师大附中,Vivian Snow,Vivian Utopia,Viviworks,信息学,评测,OJ" name="Kyewords"/>
+  <meta content="Vijos,Velocious Informatics Judge Online System" name="Description"/>
+  <meta content="All" name="Robots"/>
+  <meta content="Vivian Snow,VivianSnow@Gmail.com" name="Author"/>
+  <meta content="Copyright Vijos (c) 2005. www.Vijos.cn Powered by Vivian Snow" name="Copyright"/>
+  <meta content="Dreamweaver,Visual Studio .net 2003" name="Generator "/>
+  <link href="Skin/Life Azure/Style.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+ </head>
+ <body>
+  <div align="center">
+   <table border="0" cellpadding="0" cellspacing="0" width="750">
+    <tr>
+     <td align="center" colspan="2">
+      <a href="Index.html">
+       <img border="0" height="70" src="Skin/Life Azure/Haed.gif" usemap="#MapHead" width="750"/>
+      </a>
+      <map id="MapHead" name="MapHead">
+       <area alt="点击这里更换您喜欢的皮肤" coords="71,1,153,21" href="Skin.asp" shape="rect">
+       </area>
+       <area alt="Vijos 首页" coords="0,0,750,70" href="Index.asp" shape="rect">
+       </area>
+      </map>
+     </td>
+    </tr>
+    <tr>
+     <td align="right" bgcolor="#174B73" height="25">
+      <font class="styletext">
+      </font>
+      <a href="Index.html">
+       <font class="style3">
+        首页
+       </font>
+      </a>
+      <font class="style3">
+       |
+      </font>
+      <a href="peixun.html">
+       <font class="style3">
+        [NOIP培训]
+       </font>
+      </a>
+      <a href="kaoshi2020.html">
+       <font class="style3">
+        考试
+       </font>
+      </a>
+      <a href="Problem.html">
+       <font class="style3">
+        题库
+       </font>
+      </a>
+      <a href="Record.html">
+       <font class="style3">
+        记录
+       </font>
+      </a>
+      <a href="Rank.html">
+       <font class="style3">
+        排名
+       </font>
+      </a>
+      <a href="Group.html">
+       <font class="style3">
+        团队
+       </font>
+      </a>
+      <a href="Discuss.html">
+       <font class="style3">
+        讨论
+       </font>
+      </a>
+      <font class="style3">
+       |
+      </font>
+      <a href="USpace.html">
+       <font class="style3">
+        空间
+       </font>
+      </a>
+      <a href="Logout.html">
+       <font class="style3">
+        登出
+       </font>
+      </a>
+     </td>
+     <td align="center" bgcolor="#174B73">
+     </td>
+    </tr>
+    <tr>
+     <td bgcolor="#1B5987" colspan="2" height="5">
+     </td>
+    </tr>
+    <tr>
+     <td align="center" bgcolor="#1B5987" colspan="2">
+      <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+       <tr>
+        <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+        </td>
+        <td background="Skin/Life Azure/Frame_r1_c2.gif">
+        </td>
+        <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+        </td>
+       </tr>
+       <tr>
+        <td background="Skin/Life Azure/Frame_r2_c1.gif">
+        </td>
+        <td align="left" valign="middle" width="712">
+         <marquee align="right" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
+          <font color="#003366">
+           <b>
+            公告 News &gt;&gt;
+           </b>
+          </font>
+          <a href="News#23.html">
+           <font color="#006699">
+            <b>
+             欢迎新同学
+            </b>
+            (2017/7/14 10:18:56)
+           </font>
+          </a>
+         </marquee>
+        </td>
+        <td background="Skin/Life Azure/Frame_r2_c3.gif">
+        </td>
+       </tr>
+       <tr>
+        <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+        </td>
+        <td background="Skin/Life Azure/Frame_r3_c2.gif">
+        </td>
+        <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <table border="0" cellpadding="0" cellspacing="0" width="750">
+     <tr>
+      <td align="center" bgcolor="#1B5987" colspan="2">
+       <script>
+        document.title=document.title+" - [cqoi2017]老C的方块"
+       </script>
+       <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+        <tr>
+         <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td align="left" valign="top" width="712">
+          <table align="right" border="0" cellpadding="0" cellspacing="0" width="320">
+           <tr align="center">
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Upload_3438.html">
+               【提交】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_record_3438.html">
+               【记录】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_status_3438.html">
+               【状态】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Discuss_3438.html">
+               【讨论】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Solve_3438.html">
+               【题解】
+              </a>
+             </span>
+            </td>
+           </tr>
+          </table>
+          <a href="Problem_Show_3438.html">
+           <font class="style1">
+            [cqoi2017]老C的方块
+           </font>
+          </a>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td>
+          <hr/>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             时间限制：1秒  内存限制：512M
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+       </table>
+       <table border="0" cellpadding="0" cellspacing="0" width="740">
+        <tr>
+         <td valign="top" width="740">
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+            </td>
+            <td background="Skin/Life Azure/Frame_r1_c2.gif" colspan="2">
+            </td>
+            <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="25" valign="middle" width="712">
+             【问题描述】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             老 C 是个程序员。
+             <br/>
+             作为一个懒惰的程序员，老 C 经常在电脑上玩方块游戏消磨时间。
+             <br/>
+             游戏被限定在一个由小方格排成的R行C列网格上，如果两个小方格有公共的边，就称它们是相邻的，而且有些相邻的小方格之间的公共边比较特殊。 特殊的公共边排列得有很强的规律。首先规定，第1行的前两个小方格之间的边是特殊边。然后，特殊边在水平方向上每4个小方格为一个周期， 在竖直方向上每2个小方格为一个周期。所有的奇数列与下一列之间都有特殊边，且所在行的编号从左到右奇偶交替。
+             <br/>
+             下图所示是一个 R = C = 8 的网格，蓝色标注的边是特殊边。首先，在第1行， 第1列和第2列之间有一条特殊边。因为竖直方向周期为2，所以所有的奇数行，第1列和第2列之间都有特殊边。 因为水平方向周期为4，所以所有奇数行的第5列和第6列之间也有特殊边，如果网格足够大，所有奇数行的第9列和第10列、 第13列和第14列之间都有特殊边。因为所有的奇数列和下一列之间都有特殊边，所以第3列和第4列、第7列和第8列之间也有特殊边，而所在行的编号从左到右奇偶交替， 所以它们的特殊边在偶数行。如果网格的规模更大，我们可以用同样的方法找出所有的特殊边。
+             <br/>
+             <img src="ProblemImg/P3438a.png"/>
+             <br/>
+             网格的每个小方格刚好可以放入一个小方块，在游戏的一开始，有些小方格已经放上了小方块，另外的小方格没有放。老 C 很讨厌下图所示的图形，如果他发现有一些小方块排列成了它讨厌的形状（特殊边的位置也要如图中所示），就很容易弃疗，即使是经过任意次旋转、翻转后排列成讨厌的形状，老 C 也同样容易弃疗。
+             <br/>
+             <img src="ProblemImg/P3438b.png"/>
+             <br/>
+             为了防止弃疗，老 C 决定趁自己还没有弃疗，赶紧移除一些格子里小方块，使得剩下的小方块不能构成它讨厌的形状。但是游戏里每移除一个方块都是要花费一些金币的，每个方块需要花费的金币有多有少参差不齐。老 C 当然希望尽可能少的使用游戏里的金币，但是最少要花费多少金币呢？老 C 懒得思考，就把这个问题交给你了。
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="25" valign="middle" width="712">
+             【输入格式】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+             &amp;nbsp
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             第一行有3个正整数C, R, n， 表示C列R行的网格中， 有n个小方格放了小方块。
+             <br/>
+             接下来n行，每行3个正整数x, y, w，表示在第x列第y行的小方格里放了小方块，移除它需要花费w个金币。保证不会重复，且都在网格范围内。
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="10" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输出格式】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             输出一行，包含一个整数，表示最少花费的金币数量。
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输入样例】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             <b>
+              【样例1】
+             </b>
+             <br/>
+             2 2 4
+             <br/>
+             1 1 5
+             <br/>
+             1 2 6
+             <br/>
+             2 1 7
+             <br/>
+             2 2 8
+             <br/>
+             <br/>
+             <b>
+              【样例2】
+             </b>
+             <br/>
+             3 3 7
+             <br/>
+             1 1 10
+             <br/>
+             1 2 15
+             <br/>
+             1 3 10
+             <br/>
+             2 1 10
+             <br/>
+             2 2 10
+             <br/>
+             2 3 10
+             <br/>
+             3 1 10
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【输出样例】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             <b>
+              【样例1】
+             </b>
+             <br/>
+             5
+             <br/>
+             <br/>
+             <b>
+              【样例2】
+             </b>
+             <br/>
+             15
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【样例解释】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             <b>
+              【样例1】
+             </b>
+             <br/>
+             如图所示， 2×2的网格里，每个小方格都放了小方块，移除需要花费的金币数量如图中标注所示。这4个小方块恰好构成了一个老 C 讨厌的图形，将第1列第1行的小方块移除，花费5个金币， 剩下的方块不能形成老 C 讨厌的图形，显然这种移除方案花费的金币最少。
+             <br/>
+             <img src="ProblemImg/P3438c.png"/>
+             <br/>
+             <b>
+              【样例2】
+             </b>
+             <br/>
+             如图所示。容易发现，如果不移除第1列第2行的小方块， 则至少要移除两个小方块，才能不包含老 C讨厌的图形，花费至少20个金币；而删除第1列第2行的小方块后， 原有的讨厌图形全都不存在了， 只需要花费15个金币。
+             <br/>
+             <img src="ProblemImg/P3438d.png"/>
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【数据范围】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             对于第 1~2 个测试点， 1 ≤ C, R ≤ 100, 1 ≤ n ≤ 20；
+             <br/>
+             对于第 3~6 个测试点， 1 ≤ C, R ≤ 10^5, 2000 ≤ n ≤ 5000，数据有梯度；
+             <br/>
+             对于第 7~10 个测试点， 1 ≤ C, R ≤ 10^5, 30000 ≤ n ≤ 10^5，数据有梯度；
+             <br/>
+             对于所有测试点， 1 ≤ C, R, n ≤ 10^5, 1 ≤ w ≤ 10^4。
+             <br/>
+            </td>
+           </tr>
+          </table>
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" width="14">
+            </td>
+            <td align="left" class="style2" colspan="2" height="20" valign="top" width="712">
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r2_c1.gif" rowspan="2" width="14">
+            </td>
+            <td align="left" bgcolor="#EFFFFF" class="style2" colspan="2" height="20" valign="middle" width="712">
+             【来源】
+            </td>
+            <td background="Skin/Life Azure/Frame_r2_c3.gif" rowspan="2" width="14">
+            </td>
+           </tr>
+           <tr>
+            <td align="left" valign="top" width="10">
+            </td>
+            <td align="left" valign="top" width="702">
+             <br/>
+             <br/>
+            </td>
+           </tr>
+           <tr>
+            <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+            </td>
+            <td background="Skin/Life Azure/Frame_r3_c2.gif" colspan="2">
+            </td>
+            <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </table>
+       <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" height="0">
+        <tr>
+         <td background="Skin/Life Azure/Frame_r1_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r1_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r2_c1.gif">
+         </td>
+         <td align="left" valign="top" width="712">
+          <table align="right" border="0" cellpadding="0" cellspacing="0" width="320">
+           <tr align="right">
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Upload_3438.html">
+               【提交】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_record_3438.html">
+               【记录】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_status_3438.html">
+               【状态】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Discuss_3438.html">
+               【讨论】
+              </a>
+             </span>
+            </td>
+            <td>
+             <span style="font-weight: bold">
+              <a href="Problem_Solve_3438.html">
+               【题解】
+              </a>
+             </span>
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td background="Skin/Life Azure/Frame_r2_c3.gif">
+         </td>
+        </tr>
+        <tr>
+         <td background="Skin/Life Azure/Frame_r3_c1.gif" height="14" width="14">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c2.gif">
+         </td>
+         <td background="Skin/Life Azure/Frame_r3_c3.gif" height="14" width="14">
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#1B5987" colspan="2" height="5">
+      </td>
+     </tr>
+     <tr>
+      <td bgcolor="#003366" colspan="2" height="5">
+      </td>
+     </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="750">
+     <tr>
+      <td align="center" colspan="2" height="50">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+         <td align="left" valign="top">
+          Copyright Vijos © 2005-2006.www.Vijos.cn Powered by
+          <a href="http://www.VivianSnow.cn.html" target="_blank">
+           Vivian Snow
+          </a>
+          <a href="About.html">
+           <strong>
+            关于
+           </strong>
+          </a>
+          <a href="Contact.html">
+           <strong>
+            联系
+           </strong>
+          </a>
+          <a href="Help.html">
+           <strong>
+            帮助
+           </strong>
+          </a>
+          <br/>
+          <span style="font-size: 9px">
+           Vijos Information ----
+           <a href="Rank.html">
+            Total Users : 1495
+           </a>
+           |
+           <a href="Online.html">
+            Online Users / Processes : 2 / 5
+           </a>
+           | Processed Time : 8 ms | Server Time : 2018/1/23 21:41:13
+          </span>
+         </td>
+         <td valign="top" width="60">
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+    <style>
+     #UserShowInfo {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:68px;
+	z-index:100;
+	cursor: hand;
+	filter: Alpha(Opacity=10, FinishOpacity=20, Style=1, StartX=0, StartY=0, FinishX=0, FinishY=70);
+}
+    </style>
+    <div id="UserShowInfo">
+     <div align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="440">
+       <tr>
+        <td height="2">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <table align="left" bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="1" width="0">
+          <tr>
+           <td>
+            <table align="left" bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="0" width="100%">
+             <tr>
+              <td rowspan="2" width="48">
+               <img height="48" src="Face/Face9.gif" width="48"/>
+              </td>
+              <td>
+               <div align="center">
+                <a href="User_Show_2063.html" title="U2063 - 通过255题 - Member - 高2020级A班 - P3400">
+                 <font color="#CC9966">
+                  <strong>
+                   莫洛托夫鸡尾酒
+                  </strong>
+                 </font>
+                </a>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td bordercolor="" dir="">
+               <div align="center">
+                <img height="12" src="Face/stars4.gif" width="64"/>
+                <img height="12" src="Img/Sex_1.gif" width="10"/>
+               </div>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+   </table>
+  </div>
+ </body>
+</html>
